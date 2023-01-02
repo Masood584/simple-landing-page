@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: #000942;
+    padding-left: 11%;
+    padding-right: 8%;
+    position: relative;
+    background-image: url(./images/photo.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 92% 100%;
+}
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bababa;
+    padding: 30px 0px 15px;
+}
+
+.top-nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.top-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.top-nav button{
+    background-color: #e91e63;
+    color: #fff;
+    outline:0;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.top-nav button:hover{
+ background: #d81556;
+}
+
+.side-nav{
+    /* background:#e91e63; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    background: linear-gradient(#00bcd4,#e91e63,#3f51b5,#00bcd4);
+    background-size: 100% 500%;
+    background-position: 0 40%;
+}
+
+.side-nav:hover{
+    animation: backcolor 20s linear infinite reverse;
+}
+
+@keyframes backcolor {
+    0%{
+        background-position: 0 0%;
+    }
+    100%{
+        background-position: 0 400%;
+    }
+}
+
+.side-nav .my-logo{
+    width: 60px;
+    cursor: pointer;
+}
+
+.side-nav a{
+    text-decoration: none;
+    transform: rotate(-90deg) translateX(50%);
+    color: #ffff;
+    width: max-content;
+    font-size: 20px;
+}
+
+.text-box{
+    margin-top: 15%;
+    font-size: 18px;
+    color: #ffff;
+}
+
+.text-box h1{
+    font-weight: 500;
+    font-size: 86px;
+    max-width: 550px;
+    line-height: 95px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.text-box .icon{
+    background: #e91e63;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.text-box .icon:hover{
+    background: #d81556;
+}
+
+.text-box .icon img{
+    width: 15px;
+}
